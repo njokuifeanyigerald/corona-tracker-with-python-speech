@@ -78,11 +78,11 @@ class Data:
         t.start()
 
 data = Data(APIKEY,PROJECTTOKEN)
-# print(data.update_data())
 print(data.get_total_cases())
 print(data.get_total_deaths())
 print(data.get_total_recovered())
 print(data.get_country_data('nigeria')['total_cases'])
+print(data.update_data())
 def speak(self,text):
     engine = pyttsx3.init()
     engine.say(text)
